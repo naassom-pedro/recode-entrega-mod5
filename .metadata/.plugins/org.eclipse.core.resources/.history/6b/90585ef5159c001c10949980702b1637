@@ -1,0 +1,17 @@
+package com.viajou.model;
+
+import java.sql.Date;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Destinos {
+	private Long Id;
+	private String Origem;
+	private String Destino;
+	private String Descricao;
+	private Date DataSaida;
+	private Date DataChegada;
+	private Integer Valor;
+	private String Img;
+}

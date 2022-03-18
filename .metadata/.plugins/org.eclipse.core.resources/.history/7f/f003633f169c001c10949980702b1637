@@ -1,0 +1,21 @@
+package com.viajou.model;
+
+import java.sql.Date;
+import javax.persistence.Id;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+
+@Entity
+public class Destinos {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long Id;
+	private String Origem;
+	private String Destino;
+	private String Descricao;
+	private Date DataSaida;
+	private Date DataChegada;
+	private Integer Valor;
+	private String Img;
+}
